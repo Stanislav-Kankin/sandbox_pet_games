@@ -2,7 +2,7 @@ import pygame
 from random import randint
 
 pygame.init()
-screen = pygame.display.set_mode((400, 200))  # flags=pygame.NOFRAME(убираем рамку), задаем размеры экрана
+screen = pygame.display.set_mode((600, 500))  # flags=pygame.NOFRAME(убираем рамку), задаем размеры экрана
 pygame.display.set_caption('Тестовое название для окошка')  # Задаем название для окошка
 icon = pygame.image.load('images/main_logo_pic.png')
 pygame.display.set_icon(icon)
@@ -51,21 +51,21 @@ while running:
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_RIGHT:
                 x += 10
-                x_e = randint(0, 400)
-                y_e = randint(0, 200)
+                x_e = randint(0, 600)
+                y_e = randint(0, 500)
                 # count += 1
             elif event.key == pygame.K_LEFT:
                 x -= 10
-                x_e = randint(0, 400)
-                y_e = randint(0, 200)
+                x_e = randint(0, 600)
+                y_e = randint(0, 500)
                 # count += 1
             elif event.key == pygame.K_DOWN:
                 y += 10
-                x_e = randint(0, 400)
-                y_e = randint(0, 200)
+                x_e = randint(0, 600)
+                y_e = randint(0, 500)
                 # count += 1
             elif event.key == pygame.K_UP:
                 y -= 10
-                x_e = randint(0, 400)
-                y_e = randint(0, 200)
+                x_e = randint(0, 600)
+                y_e = randint(0, 500)
                 # count += 1
